@@ -66,7 +66,6 @@ public class TutorialController {
     public ResponseEntity<Tutorial> deleteTutorial(@PathVariable("id") long id) {
 
         tutorialRepository.deleteById(id);
-
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
